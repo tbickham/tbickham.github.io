@@ -229,11 +229,6 @@ section > div + em {
 		width: 90%;
 	}
 
-	iframe {
-		width: 105px;
-		height: 79px;
-	}
-
   .color-1, .color-2, .color-3, .pattern-1, .pattern-2, .pattern-3 {
     height: 25px;
     width: 25px;
