@@ -1,0 +1,215 @@
+/* Your Website Styles */
+
+nav {
+  position: fixed;
+  background: #DADADA;
+  width: 100%;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a:link {
+  color: #35C160;
+  background: #EBEBEB;
+  border: solid 1px #C9C9C9;
+  margin: 0 40px;
+  padding: 0 50px;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #35C160;
+  border: solid 1px #C9C9C9;
+}
+
+nav ul li a:hover {
+  background: #DADADA;
+}
+
+body {
+  font-size: 0.625em;
+  font-family: 'Archivo Narrow', sans-serif;
+  background: #2DA250;
+  padding: 0;
+  display: inline;
+}
+
+body > div {
+  background: #DADADA;
+  border: solid 1em #35C160;
+  border-radius: 1em 1em 0.5em 0.5em;
+  width: 50%;
+}
+
+h1 {
+  color: #2DA250;
+  font-size: 3.2em;
+}
+
+h2 {
+  color: #35C160;
+  font-size: 2.8em;
+}
+
+h3 {
+  color: #484848;
+  font-size: 2.0em;
+}
+
+p {
+  color: black;
+  font-size: 1.6em;
+}
+
+em {
+  color: black;
+  font-size: 1.4em;
+}
+
+figure img {
+  height: 400px;
+}
+
+li {
+  font-size: 1.6em;
+  list-style: none;
+  text-indent: -0.5em;
+  line-height: 1.5em;
+}
+
+a:link {
+  color: #35C160;
+}
+
+a:visited {
+  color: #2DA250;
+}
+
+/* Gallery Stying */
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+  border: 1.5em solid #35C160;
+  border-radius: 1em 1em 0.66em 0.66em;
+  margin: 120px 5% 0;    /* Center by making left and right margins half of the remaining width available */
+  width: 90%;
+}
+.gallery .item {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background: #DADADA;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery .controls img {
+  border: 5px solid #35C160;
+  border-radius: 0.25em;
+}
+
+.gallery .controls img:hover {
+  border: 5px solid #DADADA;
+}
+
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+
+/* Show Grid */
+.showgrid {z
+	background: url("../img/grid-bg.png") repeat-y;
+}
+
+/* Media Rules */
+
+@media screen and (max-width: 800px) {
+  figure img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .gallery .item {
+    height: auto;
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  nav ul li {
+    float: none;
+  }
+
+  nav ul li a:link {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  body > div {
+    margin: 120px 0 0;
+    width: 80%;
+  }
+
+  figure img {
+    height: 100px;
+    width: 75px;
+  }
+
+  .gallery {
+    border: 0.5em solid #35C160;
+  }
+
+  .gallery .controls {
+    max-height: 120px;
+    bottom: -60px;
+  }
+
+  .gallery .controls img {
+    border: 2px solid #35C160;
+    max-height: 30px;
+  }
+
+  .gallery .controls img:hover {
+    border: 1px solid #DADADA;
+  }
+}
+
+@media screen and (max-width: 190px) {
+  .gallery {
+    margin: 150px 5% 5%;
+  }
+
+  .gallery .controls {
+    max-height: 60px;
+    bottom: -60px;
+  }
+
+  .gallery .controls img {
+    max-height: 15px;
+  }
+}
