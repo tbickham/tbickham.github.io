@@ -105,7 +105,7 @@ a:visited {
   position: relative;
   border: 1.5em solid #35C160;
   border-radius: 1em 1em 0.66em 0.66em;
-  margin: 120px 5% 0;    /* Center by making left and right margins half of the remaining width available */
+  margin: 150px 5% 0;    /* Center by making left and right margins half of the remaining width available */
   width: 90%;
 }
 .gallery .item {
@@ -201,7 +201,7 @@ a:visited {
 
 @media screen and (max-width: 190px) {
   .gallery {
-    margin: 150px 5% 5%;
+    margin: 180px 5% 5%;
   }
 
   .gallery .controls {
