@@ -54,7 +54,7 @@ body {
 	background: #2DA250;
 	font-size: 0.625em;
 	font-family: 'Archivo Narrow', sans-serif;
-  display: inline;
+    display: inline;
 }
 
 body > div {
@@ -62,7 +62,7 @@ body > div {
 	border: solid 1em #35C160;
 	border-radius: 1em 1em 0.5em 0.5em;
 	width: 50%;
-	margin: 120px 0 2% 20%;
+	margin: 150px 0 2% 20%;
 	padding: 3%;
 }
 
@@ -143,6 +143,11 @@ li a:link {
 	font-size: 1em;
 }
 
+iframe {
+	width: 410px;
+	height: 315px;
+}
+
 .color-1 {
   background: #DADADA;
 }
@@ -193,6 +198,11 @@ section > div + em {
 	section {
 		width: 80%;
 	}
+
+	iframe {
+		width: 210px;
+		height: 158px;
+	}
 }
 
 @media screen and (max-width: 560px){
@@ -206,7 +216,7 @@ section > div + em {
   }
 
   body > div {
-    margin: 120px 0 0;
+    margin: 150px 0 0;
     width: 80%;
   }
 
@@ -217,6 +227,11 @@ section > div + em {
 
 	section {
 		width: 90%;
+	}
+
+	iframe {
+		width: 105px;
+		height: 79px;
 	}
 
   .color-1, .color-2, .color-3, .pattern-1, .pattern-2, .pattern-3 {
