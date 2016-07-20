@@ -1,155 +1,50 @@
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-  margin: 0;
+h1 {
+  color: #EFEFEF;
+  margin: 1em;
+  display: inline-block;
 }
 
-/* Layout for Style Tile*/
-section {
-  margin: 20px 0;
+div#desk-nav {
+    padding: 0 5%;
+    width: 90%;
 }
 
-.color-1,
-.color-2,
-.color-3,
-.pattern-1,
-.pattern-2,
-.pattern-3 {
-  border: 1px solid #000;
-  float: left;
-  height: 50px;
-  width: 50px;
-}
-
-/* General Style */
-
-nav {
-  position: fixed;
-  background: #DADADA;
-  width: 100%;
-}
-
-nav ul li {
-  float: left;
-}
-
-nav ul li a:link {
-  color: #35C160;
-  background: #EBEBEB;
-  border: solid 1px #C9C9C9;
-  margin: 0 40px;
-  padding: 0 50px;
-  text-decoration: none;
-}
-
-nav ul li a:visited {
-  color: #35C160;
-  border: solid 1px #C9C9C9;
-}
-
-nav ul li a:hover {
-  background: #DADADA;
+div#desk-nav a div {
+    background-color: #EFEFEF;
+    width: 24%;
+    margin: 0;
+    padding: 0.8em 0;
+    display: inline-block;
+    text-align: center;
 }
 
 body {
-	background: #2DA250;
-	font-size: 0.625em;
-	font-family: 'Archivo Narrow', sans-serif;
-    display: inline;
+    background-color: #222222;
 }
 
-body > div {
-	background: #DADADA;
-	border: solid 1em #35C160;
-	border-radius: 1em 1em 0.5em 0.5em;
-	width: 50%;
-	margin: 150px 0 2% 20%;
-	padding: 3%;
+.article {
+    padding: 0 10%;
 }
 
-h1 {
-	color: #2DA250;
-	font-size: 3.2em;
+.main-container {
+  background-color: #EFEFEF;
+  border: solid 0.25em #35C160;
+  border-radius: 0.5em 0em;
+  margin: 1em;
+  padding: 1em;
+  clear: both;
 }
 
-h2 {
-	color: #35C160;
-	font-size: 2.8em;
-}
-
-h3 {
-	color: #484848;
-	font-size: 2.0em;
-}
-
-p {
-	color: black;
-	font-size: 1.6em;
-}
-
-em {
-	color: black;
-	font-size: 1.4em;
-}
-
-li em {
-	font-size: 1em;
-}
-
-ul h3 {
-	text-indent: -1.9em;
-}
-
-li {
-	font-size: 1.6em;
-	list-style: none;
-	text-indent: -0.5em;
-	line-height: 1.5em;
-}
-
-section,
-header,
-footer {
-	width: 80%;
-	margin: 5%;
-}
-
-img {
-	border: solid 0.5em #35C160;
-	border-radius: 1em 1em 0.5em 0.5em;
-	width: 22.5%;
-	margin: 0 5%;
-	float: right;
-}
-
-a:link {
-	color: #35C160;
-	font-size: 1.6em;
-}
-
-a:visited {
-	color: #2DA250;
-	font-size: 1.6em;
-}
-
-p a:link {
-	font-size: 1em;
-}
-
-p a:visited {
-	font-size: 1em;
-}
-
-li a:link {
-	font-size: 1em;
-}
-
-iframe {
-	width: 410px;
-	height: 315px;
+nav.border {
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+    margin: 1em 0;
+    padding: 0.5em 0;
+    width: 100%;
 }
 
 .color-1 {
-  background: #DADADA;
+  background: #EAEAEA;
 }
 
 .color-2 {
@@ -160,16 +55,19 @@ iframe {
   background: #2DA250;
 }
 
-.pattern-1 {
-  background: url("../img/old_map.png") no-repeat;
+.right {
+    float: right;
 }
 
-.pattern-2 {
-  background: url("../img/subtle_grunge.png") no-repeat;
+.clear {
+    clear: both;
 }
 
-.pattern-3 {
-  background: url("../img/green_cup.png") no-repeat;
+#mobile-nav {
+    visibility: hidden;
+    background-color: #EFEFEF;
+    margin: 0 0 -1.2em;
+    align-content: center;
 }
 
 /* Show Grid */
@@ -177,60 +75,48 @@ iframe {
   background: url("../img/grid-bg.png") repeat-y;
 }
 
-section + section + section {
-  padding: 20px;
-}
-
-section > div + em {
-  font-size: 1em;
-}
-
 /* Media Rules */
 
 /* General Media Styling */
 
 @media screen and (max-width: 970px){
-  img {
-		float: none;
-		width: 30%;
-	}
+  
+    h1 {
+        font-size: 1.5em;
+    }
 
-	section {
-		width: 80%;
-	}
-
-	iframe {
-		width: 210px;
-		height: 158px;
-	}
 }
 
 @media screen and (max-width: 560px){
-  nav ul li {
-    float: none;
+  
+  h1 {
+      width: 80%;
+      margin: 0.25em 10%;
+      text-align: center;
   }
 
-  nav ul li a:link {
-    padding: 0 20px;
-    margin: 0;
+  .article {
+    padding: 0;
+    font-size: small;
   }
-
-  body > div {
-    margin: 150px 0 0;
-    width: 80%;
-  }
-
-	img {
-		float: none;
-		width: 50%;
-	}
-
-	section {
-		width: 90%;
-	}
 
   .color-1, .color-2, .color-3, .pattern-1, .pattern-2, .pattern-3 {
     height: 25px;
     width: 25px;
+  }
+
+  nav.border {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  div#desk-nav {
+    padding: 0;
+    width: 95%;
+    margin: 0 2.5%;
+  }
+
+  div#desk-nav a div {
+    width: 23.5%;
   }
 }
